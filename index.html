@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="SYSTEM, PROJECT,">
+    <meta name="description" content="Patient Health Management System">
+    <meta name="author" content="Group 2 - 3ITMWS01">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Health System</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+<body>
+
+    <!------------------------------ NAVIGATION ------------------------------>
+
+    <nav class="nav-container">
+
+        <figure class="navLight-wrapper lightAbove">
+            <img src="images/light.gif" alt="Light">
+        </figure>
+
+        <figure class="navLight-wrapper lightBelow">
+            <img src="images/light.gif" alt="Light">
+        </figure>
+
+        <section class="navLink-section">
+            <li class="navLink home selected" id="navLink-home">HOME</li>
+            <li class="navLink aboutUs" id="navLink-aboutUs">ABOUT US</li>
+            <li class="navLink faq" id="navLink-faq">FAQ</li>
+        </section>
+
+    </nav>
+
+    <!------------------------------ HEADER ------------------------------>
+
+    <header class="header-container" id="headerContainer">
+
+        <figure class="headerLogo-wrapper" id="headerLogo-wrapper">
+            <img src="images/tua-logo.png" alt="TUA Logo">
+        </figure>
+
+        <h1 class="headerContent">
+            Patient Health Management System For Sitio Catmon and Sitio Katwiran
+        </h1>
+
+    </header>
+
+    <!------------------------------ MAIN ------------------------------>
+
+    <main class="main-container" id="mainContainer">
+
+        <figure class="selectionIcon-wrapper userIcon">
+            <img src="images/user-icon.png" alt="User Icon">
+        </figure>
+
+        <figure class="selectionIcon-wrapper adminIcon">
+            <img src="images/admin-icon.png" alt="Admin Icon">
+        </figure>
+
+        <section class="selectionLink-section">
+            <li class="selectionLink userLink" id="selectionLink-userLink">USER</li>
+            <li class="selectionLink adminLink" id="selectionLink-adminLink">ADMIN</li>
+        </section>
+
+    </main>
+
+    <!------------------------------ ASIDE - (ABOUT US)) ------------------------------>
+
+    <aside class="aside-container aboutUs" id="asideContainer-aboutUs">
+
+        <section class="aboutUs-section">ABOUT US <br> UNAVAILABLE</section>
+
+    </aside>
+
+    <!------------------------------ ASIDE - (FAQ) ------------------------------>
+
+    <aside class="aside-container faq" id="asideContainer-faq">
+
+        <section class="faq-section">FAQ <br> UNAVAILABLE</section>
+
+    </aside>
+
+    <!------------------------------ ASIDE - (SELECT LOGIN USER) ------------------------------>
+
+    <aside class="aside-container userSelection" id="asideContainer-userSelection">
+
+        <figure class="userIcon-wrapper">
+            <img src="images/user-icon.png" alt="User Icon">
+        </figure>
+
+        <section class="userSelectionLink-section">
+            <li class="userSelectionLink" id="userSelectionLink-register">REGISTER</li>
+            <li class="userSelectionLink" id="userSelectionLink-login">LOGIN</li>
+        </section>
+
+        <p class="userSelectionExit" id="userSelectionExit">X</p>
+
+    </aside>
+
+    <!------------------------------ ASIDE - (SELECT LOGIN ADMIN) ------------------------------>
+
+    <aside class="aside-container adminSelection" id="asideContainer-adminSelection">
+
+        <figure class="adminIcon-wrapper">
+            <img src="images/admin-icon.png" alt="Admin Icon">
+        </figure>
+
+        <section class="adminSelectionLink-section">
+            <li class="adminSelectionLink" id="adminSelectionLink-register">REGISTER</li>
+            <li class="adminSelectionLink" id="adminSelectionLink-login">LOGIN</li>
+        </section>
+
+        <p class="adminSelectionExit" id="adminSelectionExit">X</p>
+
+    </aside>
+
+    <!------------------------------ ASIDE - (REGISTER USER) ------------------------------>
+
+    <aside class="aside-container userRegister" id="asideContainer-userRegister">
+
+        <form  class="userRegister-section" action="php/user-register.php" method="post">
+
+            <label class="formHeader">REGISTER AS A USER</label>
+
+            <figure class="formIcon-wrapper userIcon">
+                <img src="images/user-icon.png" alt="User Icon">
+            </figure> 
+
+            <section class="formInput-section username">
+                <label for="usernameUser">Username:</label> <br>
+                <input type="text" name="usernameUser-register" id="usernameUser-register" maxlength="10" autocomplete="off" required>
+            </section>
+
+            <section class="formInput-section password">
+                <label for="">Password:</label> <br>
+                <input type="password" name="userPassword-register" id="userPassword-register" maxlength="10" autocomplete="off" required>
+                <i class="fa-solid fa-eye-slash" id="fa-eye-slash1"></i>
+            </section>
+
+            <input type="submit" class="submit">
+
+        </form>
+
+        <p class="userExit" id="userRegisterExit">X</p>
+
+    </aside>
+
+    <!------------------------------ ASIDE - (LOGIN USER) ------------------------------>
+
+    <aside class="aside-container userLogin" id="asideContainer-userLogin">
+
+        <form  class="userLogin-section" action="php/user-login.php" method="post">
+
+            <label class="formHeader">LOGIN AS A USER</label>
+
+            <figure class="formIcon-wrapper userIcon">
+                <img src="images/user-icon.png" alt="User Icon">
+            </figure> 
+
+            <section class="formInput-section username">
+                <label for="usernameUser">Username:</label> <br>
+                <input type="text" name="usernameUser-login" id="usernameUser-login" maxlength="10" autocomplete="off" required>
+            </section>
+
+            <section class="formInput-section password">
+                <label for="">Password:</label> <br>
+                <input type="password" name="userPassword-login" id="userPassword-login" maxlength="10" autocomplete="off" required>
+                <i class="fa-solid fa-eye-slash" id="fa-eye-slash2"></i>
+            </section>
+
+            <input type="submit" class="submit">
+
+        </form>
+
+        <p class="userExit" id="userLoginExit">X</p>
+
+    </aside>
+
+    <!------------------------------ ASIDE - (REGISTER ADMIN) ------------------------------>
+
+    <aside class="aside-container adminRegister" id="asideContainer-adminRegister">
+
+        <form  class="adminRegister-section" action="php/admin-register.php" method="post">
+
+            <label class="formHeader admin">REGISTER AS A ADMIN</label>
+
+            <figure class="formIcon-wrapper adminIcon">
+                <img src="images/admin-icon.png" alt="admin Icon">
+            </figure> 
+
+            <section class="formInput-section usernameAdmin">
+                <label for="usernameUser">Username:</label> <br>
+                <input type="text" name="usernameAdmin-register" id="usernameAdmin-Register" maxlength="10" autocomplete="off" required>
+            </section>
+
+            <section class="formInput-section passwordAdmin">
+                <label for="">Password:</label> <br>
+                <input type="password" name="adminPassword-register" id="adminPassword-register" maxlength="10" autocomplete="off" required>
+                <i class="fa-solid fa-eye-slash" id="fa-eye-slash3"></i>
+            </section>
+
+            <input type="submit" class="submit admin">
+
+        </form>
+
+        <p class="adminExit" id="adminRegisterExit">X</p>
+
+    </aside>
+
+    <!------------------------------ ASIDE - (LOGIN ADMIN) ------------------------------>
+
+    <aside class="aside-container adminLogin" id="asideContainer-adminLogin">
+
+        <form  class="adminLogin-section" action="php/admin-login.php" method="post">
+
+            <label class="formHeader admin">LOGIN AS A ADMIN</label>
+
+            <figure class="formIcon-wrapper adminIcon">
+                <img src="images/admin-icon.png" alt="admin Icon">
+            </figure> 
+
+            <section class="formInput-section usernameAdmin">
+                <label for="usernameUser">Username:</label> <br>
+                <input type="text" name="usernameAdmin-login" id="usernameAdmin-login" maxlength="10" autocomplete="off" required>
+            </section>
+
+            <section class="formInput-section passwordAdmin">
+                <label for="">Password:</label> <br>
+                <input type="password" name="adminPassword-login" id="adminPassword-login" maxlength="10" autocomplete="off" required>
+                <i class="fa-solid fa-eye-slash" id="fa-eye-slash4"></i>
+            </section>
+
+            <input type="submit" class="submit admin">
+
+        </form>
+
+        <p class="adminExit" id="adminLoginExit">X</p>
+
+    </aside>
+
+    <!------------------------------ FOOTER------------------------------>
+
+    <footer class="footer-container" id="footerContainer">
+
+        <section class="footerLink-section">
+            <i class="fa-brands fa-google" id="fa-google" data-link1="Google"></i>
+            <i class="fa-brands fa-facebook" id="fa-facebook" data-link2="Facebook"></i>
+            <i class="fa-brands fa-instagram" id="fa-instagram" data-link3="Instagram"></i>
+            <i class="fa-brands fa-github" id="fa-github" data-link4="Github"></i>
+            <i class="fa-brands fa-tiktok" id="fa-tiktok" data-link5="Tiktok"></i>
+            <i class="fa-brands fa-discord" id="fa-discord" data-link6="Discord"></i>
+        </section>
+
+        <address class="footerContent">
+            &copy; 2023 | Group 2
+        </address>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+    <noscript>SORRY YOUR BROWSER DOESN'T SUPPORT JAVASCRIPT!</noscript>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Side bar menu</title>
+        <link rel="stylesheet" href="style-patient.css">
+    </head>
+    <body>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i id="btn"></i>
+            <i id="cancel"></i>
+        </label>
+        <div class = "sidebar">
+                <header>Patient Account</header>
+                <a href="#"><span>Profile</span></a>
+                <a href="#"><span>Records</span></a>
+                <a href="#"><span>++Records</span></a>
+                <a href="#"><span>Prescription</span></a>
+    </div>
+
+    <button onclick="logout()">LOGOUT</button>
+
+    <script>
+
+        function logout() {
+
+            window.location.href = "../index.html";
+        }
+    </script>
+    </body>
+</html>

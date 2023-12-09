@@ -1,0 +1,958 @@
+/*-------------------------------------------------- IMPORT --------------------------------------------------*/
+
+@import url('universal.css');
+
+/*-------------------------------------------------- NAVIGATION --------------------------------------------------*/
+
+.nav-container {
+
+    width: 20%; 
+    height: 100%;
+
+    background-color: rgb(0, 30, 0);
+
+    position: absolute;
+    left: 0%;
+}
+
+/*------------------------------ LIGHT ------------------------------*/
+
+.navLight-wrapper {
+
+    width: 100%;
+    height: 5vw;
+}
+
+.navLight-wrapper > img {
+
+    width: 100%;
+    height: 100%;
+}
+
+/*---------- (LIGHT ABOVE) ----------*/
+
+.navLight-wrapper.lightAbove {
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+/*---------- (LIGHT BELOW) ----------*/
+
+.navLight-wrapper.lightBelow {
+
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+}
+
+.navLight-wrapper.lightBelow > img {
+
+    transform: scaleY(-1);
+} 
+
+/*------------------------------ LINK ------------------------------*/
+
+.navLink-section {
+
+    width: 90%;
+    height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    border: solid darkgreen;
+    border-radius: 5vh;
+
+    background-color: green;
+    box-shadow: 0vw 0vw 1vw 0.2vw black inset;
+
+    margin: 7vw auto;
+
+    position: relative;
+}
+
+.navLink {
+
+    width: 80%;
+    height: 10vh;
+
+    list-style-type: none;
+
+    border: solid white;
+    border-radius: 5vh;
+
+    padding: 3vh 0vh;
+
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+    &:hover {
+
+        background-color: white;
+    
+        color: darkgreen;
+    }
+}
+
+/*---------- (HOME LINK) ----------*/
+
+.navLink.home {
+
+    cursor: url('../../images/cursor1.png'), auto;
+}
+
+/*---------- (ABOUT US LINK) ----------*/
+
+.navLink.aboutUs {
+
+    cursor: url('../../images/cursor2.png'), auto;
+}
+
+/*---------- (FAQ LINK) ----------*/
+
+.navLink.faq {
+
+    cursor: url('../../images/cursor3.png'), auto;
+}
+
+/*-------------------------------------------------- HEADER --------------------------------------------------*/
+
+.header-container {
+
+    width: 50%;
+    height: 9vw;
+
+    border-radius: 2vw;
+
+    background-color: rgb(3, 55, 3);
+
+    position: absolute;
+    top: 2%;
+    right: 13%;
+}
+
+/*------------------------------ LOGO ------------------------------*/
+
+.headerLogo-wrapper {
+
+    width: 20%;
+    height: 100%;
+
+    border-radius: 2vw;
+
+    background-color: white;
+
+    position: absolute;
+    left: 0%;
+
+    cursor: pointer;
+}
+
+.headerLogo-wrapper > img {
+
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------ CONTENT ------------------------------*/
+
+.headerContent {
+
+    width: 80%;
+    height: 100%;
+
+    padding: 2vw 0vw;
+
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    color: whitesmoke;
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0.1vw 0.1vw 0vw orange;
+}
+
+/*-------------------------------------------------- MAIN --------------------------------------------------*/
+
+/*------------------------------ ICON ------------------------------*/
+
+.selectionIcon-wrapper {
+
+    width: 30%;
+    height: 50%;
+}
+
+.selectionIcon-wrapper > img {
+
+    width: 100%;
+    height: 100%;
+}
+
+/*---------- (USER ICON) ----------*/
+
+.selectionIcon-wrapper.userIcon {
+
+    position: absolute;
+    top: 10%;
+    left: 12%;
+}
+
+/*---------- (ADMIN ICON) ----------*/
+
+.selectionIcon-wrapper.adminIcon {
+
+    position: absolute;
+    top: 11%;
+    right: 14%;
+}
+
+/*------------------------------ LINK ------------------------------*/
+
+.selectionLink-section {
+
+    width: 65%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 10%;
+    left: 17%;
+}
+
+.selectionLink {
+
+    width: 32%;
+    height: 100%;
+
+    list-style-type: none;
+
+    border-radius: 50vw;
+    
+    padding: 1.3vw 0vw;
+
+    font-size: 1.5vw;
+    font-weight: 900;
+    color: #a4a49c;
+    text-align: center;
+
+    cursor: pointer;
+
+    &:hover {
+
+        box-shadow: 0vw 0vw 1vw 0.5vw white;
+
+        color: white;
+    }
+}
+
+/*---------- (USER LINK) ----------*/
+
+.selectionLink.userLink {
+
+    background-color: #040404;
+}
+
+/*---------- (ADMIN LINK) ----------*/
+
+.selectionLink.adminLink {
+
+    background-color: #045c84;
+}
+
+/*-------------------------------------------------- ASIDE - (ABOUT US AND FAQ) --------------------------------------------------*/
+
+.aside-container.aboutUs, .aside-container.faq {
+
+    width: 80%;
+    height: 100vh;
+
+    display: none;
+
+    border: none;
+
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    animation: none;
+}
+
+/*------------------------------ CONTENT ------------------------------*/
+
+.aboutUs-section, .faq-section {
+
+    width: 30vh;
+    height: 20vh;
+
+    border-radius: 1vh;
+
+    background-color: white;
+
+    padding: 6vh 0vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: 3vh;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*-------------------------------------------------- ASIDE - (LOGIN USER AND ADMIN) --------------------------------------------------*/
+
+/*---------- (USER) ----------*/
+
+.aside-container.userSelection {
+
+    display: none;
+
+    border-color: black;
+}
+
+/*---------- (ADMIN) ----------*/
+
+.aside-container.adminSelection {
+
+    display: none;
+
+    border-color: #045c84;
+}
+
+/*------------------------------ ICON ------------------------------*/
+
+.userIcon-wrapper, .adminIcon-wrapper {
+
+    width: 30%;
+    height: 50%;
+
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.userIcon-wrapper > img, .adminIcon-wrapper > img {
+
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------ LINK ------------------------------*/
+
+.userSelectionLink-section, .adminSelectionLink-section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 40%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0%;
+    right: 15%;
+}
+
+.userSelectionLink, .adminSelectionLink {
+
+    width: 100%;
+    height: 30%;
+
+    box-sizing: content-box;
+
+    list-style-type: none;
+
+    border-radius: 7vw;
+
+    background-color: white;
+
+    padding: 2vw 0vw;
+
+    font-size: 2vw;
+    font-weight: 900;
+    text-align: center;
+
+    cursor: pointer;
+
+    &:hover {
+
+        box-shadow: 0vw 0vw 1vw 0.5vw white;
+
+        color: white;
+    }
+}
+
+/*---------- (USER LINK) ----------*/
+
+.userSelectionLink {
+
+    border: solid black;
+
+    &:hover {
+
+        background-color: black;
+    }
+}
+
+/*---------- (ADMIN LINK) ----------*/
+
+.adminSelectionLink {
+
+    border: solid #045c84;
+
+    color: #045c84;;
+
+    &:hover {
+
+        border: solid white;
+
+        background-color: #045c84;
+    }
+}
+
+/*------------------------------ EXIT ------------------------------*/
+
+.userSelectionExit, .adminSelectionExit {
+
+    width: 7%;
+    height: 8%;
+
+    border: 0.2vw solid white;
+
+    padding: 0.3vw 0vw;
+
+    position: absolute;
+    top: -2%;
+    right: 1%;
+
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+
+    cursor: pointer;
+
+    &:hover {
+
+        box-shadow: 0vw 0vw 0.5vw 0.1vw white;
+
+        background-color: darkred;
+    }
+}
+
+/*---------- (USER EXIT) ----------*/
+
+.userSelectionExit {
+
+    background-color: black;
+}
+
+/*---------- (ADMIN EXIT) ----------*/
+
+.adminSelectionExit {
+
+    background-color: #045c84;
+}
+
+/*-------------------------------------------------- ASIDE - (USER / ADMIN REGISTER AND LOGIN) --------------------------------------------------*/
+
+/*---------- (USER / ADMIN REGISTER AND LOGIN) ----------*/
+
+.aside-container.userRegister, .aside-container.userLogin, .aside-container.adminRegister, .aside-container.adminRegister{
+
+    display: none;
+}
+
+/*---------- (USER ADN ADMIN REGISTER) ----------*/
+
+.aside-container.userRegister, .aside-container.adminRegister {
+
+    border-color: rgb(255, 208, 0);
+}
+
+/*---------- (USER ADN ADMIN LOGIN) ----------*/
+
+.aside-container.userLogin, .aside-container.adminLogin {
+
+    border-color: rgb(0, 255, 47);
+}
+
+/*---------- (CURRENT) ----------*/
+
+.aside-container.adminLogin {
+
+    display: none;
+}
+
+/*------------------------------ FORM ------------------------------*/
+
+.userRegister-section, .userLogin-section, .adminRegister-section, .adminLogin-section {
+
+    width: 80%;
+    height: 80%;
+
+    border-radius: 1vw;
+
+    background-color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*------------------------------ HEADER ------------------------------*/
+
+.formHeader {
+
+    background-color: black;
+    width: 100%;
+    height: 10%;
+
+    padding: 0.2vw 0vw;
+
+    position: absolute;
+    top: 5%;
+    left: 0%;
+
+    font-size: 1vw;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+/*---------- (ADMIN) ----------*/
+
+.formHeader.admin {
+
+    background-color: #045c84;
+}
+
+/*------------------------------ ICON ------------------------------*/
+
+.formIcon-wrapper {
+
+    width: 12vw;
+    height: 10vw;
+
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.formIcon-wrapper > img {
+
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------ BUNDLE ------------------------------*/
+
+.formInput-section {
+
+    width: 40%;
+    height: 30%;
+
+    position: absolute; 
+    right: 15%;
+}
+
+/*---------- (BUNDLE USERNAME) ----------*/
+
+.formInput-section.username, .formInput-section.usernameAdmin {
+
+    top: 25%;
+}
+
+/*---------- (BUNDLE PASSWORD) ----------*/
+
+.formInput-section.password, .formInput-section.passwordAdmin {
+
+    top: 60%;
+}
+
+/*------------------------------ LABEL ------------------------------*/
+
+.formInput-section > label {
+
+    font-size: 1.5vw;
+
+    position: absolute;
+    top: 0%;
+}
+
+/*------------------------------ INPUT ------------------------------*/
+
+.formInput-section > input[type="text"],
+.formInput-section > input[type="password"] {
+
+    
+    width: 16vw;
+    height: 3vw;
+
+    padding: 5%;
+
+    position: absolute;
+    bottom: 10%;
+
+    font-size: 1.5vw;
+}
+
+.formInput-section > input:focus, 
+.formInput-section > input:valid {
+
+    background-color: black;
+
+    width: 16vw;
+    height: 3vw;
+
+    color: white;
+
+    transition: all 1s;
+}
+
+/*---------- (ADMIN) ----------*/
+
+.formInput-section.usernameAdmin > input:focus,
+.formInput-section.usernameAdmin > input:valid,
+.formInput-section.passwordAdmin > input:focus,
+.formInput-section.passwordAdmin > input:valid {
+
+    background-color: #045c84;
+
+    width: 16vw;
+    height: 3vw;
+
+    color: white;
+
+    transition: all 1s;
+}
+
+/*------------------------------ VISIBILITY ------------------------------*/
+
+.fa-solid {
+
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    
+    font-size: 1vw;
+    
+    cursor: pointer;
+}
+
+.formInput-section > input[type="password"]:focus + .fa-solid,
+.formInput-section > input[type="password"]:valid  + .fa-solid,
+.formInput-section > input[type="text"]:focus + .fa-solid,
+.formInput-section > input[type="text"]:valid + .fa-solid {
+
+    color: white;
+}
+
+/*------------------------------ SUBMIT ------------------------------*/
+
+.submit {
+
+    width: 20%;
+    height: 15%;
+
+    border-radius: 10vw;
+
+    background-color: black;
+
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+
+    font-size: 1vw;
+    font-weight: 900;
+    color: #a4a49c;
+
+    cursor: pointer;
+
+    &:hover {
+
+        color: white;
+    }
+}
+
+/*---------- (ADMIN) ----------*/
+
+.submit.admin {
+
+    background-color: #045c84;
+}
+
+/*------------------------------ EXIT ------------------------------*/
+
+.userExit, .adminExit {
+
+    width: 7%;
+    height: 8%;
+
+    border: 0.2vw solid white;
+
+    background-color: black;
+
+    padding: 0.3vw 0vw;
+
+    position: absolute;
+    top: -2%;
+    right: 1%;
+
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+
+    cursor: pointer;
+
+    &:hover {
+
+        box-shadow: 0vw 0vw 0.5vw 0.1vw white;
+
+        background-color: darkred;
+    }
+}
+
+/*---------- (ADMIN) ----------*/
+
+.adminExit {
+
+    background-color: #045c84;
+}
+
+/*-------------------------------------------------- FOOTER --------------------------------------------------*/        
+
+.footer-container {
+
+    width: 65%;
+    height: 10%;
+    
+    border-radius: 2vw;
+
+    background-color: rgb(3, 55, 3);
+
+    position: absolute;
+    bottom: 2%;
+    right: 6%;
+}
+
+/*------------------------------ LINK ------------------------------*/
+
+.footerLink-section {
+
+    width: 60%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-brands {
+
+    width: 6vh;
+    height: 6vh;
+
+    border-radius: 50%;
+
+    padding: 1.5vh 1.5vh;
+
+    font-size: 3vh;
+    color: white;
+
+    cursor: pointer;
+
+    &:hover {
+
+        box-shadow: 0vw 0vw 1vw 0vw white;
+    }
+
+    &::after {
+
+        width: 15vh;
+        height: 6vh;
+
+        box-sizing: border-box;
+
+        background-color: rgba(0, 0, 0, 0.7);
+
+        border-radius: 20%;
+
+        padding: 2vh 0vh;
+
+        font-size: 1.5vh;
+        font-weight: 700;
+        color: white;
+        text-align: center; 
+    }
+}
+
+/*---------- GOOGLE LINK ----------*/
+
+.fa-brands.fa-google {
+
+    &:hover {
+
+        background-color: rgb(255, 166, 0);
+    }
+
+    &:hover::after {
+
+        content: attr(data-link1);
+
+        border: 0.2vw solid rgb(255, 166, 0);
+        
+        position: absolute;
+        top: -60%;
+        left: 2%;
+    }
+}
+
+/*---------- FACEBOOK LINK ----------*/
+
+.fa-brands.fa-facebook {
+
+    &:hover {
+
+        background-color: rgb(0, 26, 255);
+    }
+
+    &:hover::after {
+
+        content: attr(data-link2);
+
+        border: 0.2vw solid rgb(0, 26, 255);
+        
+        position: absolute;
+        top: -60%;
+        left: 11.2%;
+    }
+}
+
+/*---------- INSTAGRAM LINK ----------*/
+
+.fa-brands.fa-instagram {
+
+    &:hover {
+
+        background-color: rgb(255, 25, 0);
+    }
+
+    &:hover::after {
+
+        content: attr(data-link3);
+
+        border: 0.2vw solid rgb(255, 25, 0);
+        
+        position: absolute;
+        top: -60%;
+        left: 20.1%;
+    }
+}
+
+/*---------- GITHUB LINK ----------*/
+
+.fa-brands.fa-github {
+
+    &:hover {
+
+        background-color: rgb(112, 0, 149);
+    }
+
+    &:hover::after {
+
+        content: attr(data-link4);
+
+        border: 0.2vw solid rgb(112, 0, 149);
+        
+        position: absolute;
+        top: -60%;
+        left: 29.1%;
+    }
+}
+
+/*---------- TIKTOK LINK ----------*/
+
+.fa-brands.fa-tiktok {
+
+    padding: 1.5vh 1.8vh;
+
+    &:hover {
+
+        background-color: rgb(20, 19, 19);
+    }
+
+    &:hover::after {
+
+        content: attr(data-link5);
+
+        border: 0.2vw solid white;
+        
+        position: absolute;
+        top: -60%;
+        left: 38.5%;
+    }
+}
+
+/*---------- DISCORD LINK ----------*/
+
+.fa-brands.fa-discord {
+
+    padding: 1.5vh 1.2vh;
+
+    &:hover {
+
+        background-color: rgb(157, 0, 255);
+    }
+
+    &:hover::after {
+
+        content: attr(data-link6);
+
+        border: 0.2vw solid rgb(157, 0, 255);
+        
+        position: absolute;
+        top: -60%;
+        left: 48%;
+    }
+}
+
+/*------------------------------ ADDRESS ------------------------------*/
+
+.footerContent {
+
+    width: 30%;
+    height: 60%;
+
+    border-left: 0.2vw solid white;
+
+    padding: 2vh 0vh;
+
+    position: absolute;
+    top: 18%;
+    right: 0%;
+
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+}
+
+/*-------------------------------------------------- ANIMATION --------------------------------------------------*/
+
+@keyframes floating {
+
+    0% {transform: translate(0vw, -0.5vw);}
+    50% {transform: translate(0vw, 0.5vw);}
+    100% {transform: translate(0vw, -0.5vw);}
+}

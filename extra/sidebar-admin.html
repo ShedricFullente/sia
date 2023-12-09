@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Side bar menu</title>
+        <link rel="stylesheet" href="style-admin.css">
+    </head>
+    <body>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i id="btn"></i>
+            <i id="cancel"></i>
+        </label>
+        <div class = "sidebar">
+                <header>Admin Account</header>
+                <a href="#"><span>Profile</span></a>
+                <div class="submenu">
+                <a href="#" class="patients-link"><span>Patients</span></a>
+                <ul class="submenu-list">
+                <li><a href="#" class="prescribe-link"><span>Prescribe</span></a></li>
+                <li><a href="#" class="records-link"><span>Records</span></a></li>
+                </ul>
+        </div>
+    </div>
+
+    <button onclick="logout()">LOGOUT</button>
+
+    <script>
+
+        function logout() {
+
+            window.location.href = "../index.html";
+        }
+    </script>
+    
+    </body>
+</html>
